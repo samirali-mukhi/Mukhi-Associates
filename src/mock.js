@@ -1,41 +1,14 @@
-// Mock data for CA Meherally Website
+// Mock data for CA Website
 
 export const teamMembers = [
   {
     id: 1,
-    name: "CA Meherally",
+    name: "M/s Mukhi and Associates",
     designation: "Founder & Senior Partner",
     qualification: "FCA, DISA (ICAI)",
     experience: "15+ Years",
     specialization: "Tax Planning & Corporate Law",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop"
-  },
-  {
-    id: 2,
-    name: "CA Priya Sharma",
-    designation: "Partner",
-    qualification: "ACA",
-    experience: "10+ Years",
-    specialization: "Audit & Assurance",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop"
-  },
-  {
-    id: 3,
-    name: "CA Rajesh Kumar",
-    designation: "Senior Associate",
-    qualification: "ACA, DISA",
-    experience: "8+ Years",
-    specialization: "GST & Indirect Tax",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop"
-  },
-  {
-    id: 4,
-    name: "CA Anjali Verma",
-    designation: "Associate",
-    qualification: "ACA",
-    experience: "5+ Years",
-    specialization: "Corporate Finance",
-    image: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=400&fit=crop"
+    // image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop"
   }
 ];
 
@@ -115,16 +88,16 @@ export const services = [
 ];
 
 export const contactInfo = {
-  address: "123 Business Tower, MG Road, Bangalore - 560001",
-  phone: "+91 80 1234 5678",
-  mobile: "+91 98765 43210",
-  email: "info@camerherally.com",
-  hours: "Monday - Friday: 9:30 AM - 6:30 PM, Saturday: 9:30 AM - 2:00 PM"
+  address: "Basera F-1-A, 102, Narendra Park, Naya Nagar, Mira Road, Thane - 401107",
+  // phone: "+91 80 1234 5678",
+  mobile: "+91 99309 18624",
+  email: "mukhiassociates2012@gmail.com",
+  hours: "Monday - Friday: 10 AM - 7 PM, Saturday: 10 AM - 2 PM, Sunday: Closed"
 };
 
 export const stats = [
-  { label: "Years of Experience", value: "15+" },
+  { label: "Years of Experience", value: "8+" },
   { label: "Happy Clients", value: "500+" },
-  { label: "Projects Completed", value: "1000+" },
+  { label: "Projects Completed", value: "100+" },
   { label: "Expert Team Members", value: "25+" }
 ];
