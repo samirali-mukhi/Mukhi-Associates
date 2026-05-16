@@ -8,14 +8,14 @@ export const Home = () => {
     <div className="page-home">
       {/* Hero Section */}
       <section className="hero-section">
-        <div className="hero-background">
+        {/* <div className="hero-background">
           <img
             src="https://images.unsplash.com/photo-1554224311-beee460c201f?w=1920&h=1080&fit=crop"
             alt="Professional accounting services"
             className="hero-image"
           />
           <div className="hero-overlay"></div>
-        </div>
+        </div> */}
         <div className="container">
           <div className="hero-content">
             <h1 className="hero-title">EXPERT ACCOUNTING SOLUTIONS</h1>
@@ -35,7 +35,7 @@ export const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="stats-section">
+      {/* <section className="stats-section">
         <div className="container">
           <div className="stats-grid">
             {stats.map((stat, index) => (
@@ -46,29 +46,25 @@ export const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* About Section */}
       <section className="about-section">
         <div className="container">
           <div className="about-grid">
             <div className="about-content">
-              <h2 className="heading-2">WHY CHOOSE CA MEHERALLY?</h2>
+              <h2 className="heading-2">WHY CHOOSE CA Mukhi and Associates?</h2>
               <p className="body-medium" style={{ marginTop: '24px', marginBottom: '32px' }}>
-                With over 15 years of experience, we provide expert financial solutions tailored to your business needs.
+                With over 8 years of experience, we provide expert financial solutions tailored to your business needs.
               </p>
               <ul className="feature-list">
                 <li className="feature-item">
                   <CheckCircle size={20} />
-                  <span>15+ Years of Professional Excellence</span>
+                  <span>8+ Years of Professional Excellence</span>
                 </li>
                 <li className="feature-item">
                   <CheckCircle size={20} />
                   <span>500+ Satisfied Clients</span>
-                </li>
-                <li className="feature-item">
-                  <CheckCircle size={20} />
-                  <span>Expert Team of Qualified CAs</span>
                 </li>
                 <li className="feature-item">
                   <CheckCircle size={20} />
@@ -79,8 +75,8 @@ export const Home = () => {
                   <span>Personalized Financial Solutions</span>
                 </li>
               </ul>
-              <Link to="/team" className="btn-primary" style={{ marginTop: '32px' }}>
-                MEET OUR TEAM
+              <Link to="/aboutus" className="btn-primary" style={{ marginTop: '32px' }}>
+                ABOUT US
               </Link>
             </div>
             <div className="about-image">

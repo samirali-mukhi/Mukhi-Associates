@@ -143,7 +143,7 @@ export const Contact = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     className="form-input"
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 99999 9999"
                   />
                 </div>
 
