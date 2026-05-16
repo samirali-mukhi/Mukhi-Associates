@@ -8,7 +8,7 @@ export const Header = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Our Team', path: '/team' },
+    { name: 'About US', path: '/aboutus' },
     { name: 'Services', path: '/services' },
     { name: 'Contact Us', path: '/contact' }
   ];
@@ -19,32 +19,38 @@ export const Header = () => {
     <header className="header-main">
       <div className="container">
         <div className="header-content">
-          <Link to="/" className="logo">
-            <span className="logo-text">CA Meherally</span>
-          </Link>
-
-          {/* Desktop Navigation */}
-          <nav className="desktop-nav">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`nav-link ${isActive(item.path) ? 'active' : ''}`}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="mobile-menu-btn"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+        {/* Added display: flex, align-items, and gap inline */}
+        <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <img 
+            src="public/assets/images/ca_logo.png" 
+            alt="CA India" 
+            style={{ height: '60px', width: '60px', display: 'block', objectFit: 'contain' }} 
+          />
+          <span className="logo-text">Mukhi and Associates</span>
         </div>
+
+        {/* Desktop Navigation */}
+        <nav className="desktop-nav">
+          {navItems.map((item) => (
+            <Link
+              key={item.path}
+              to={item.path}
+              className={`nav-link ${isActive(item.path) ? 'active' : ''}`}
+            >
+              {item.name}
+            </Link>
+          ))}
+        </nav>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="mobile-menu-btn"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (

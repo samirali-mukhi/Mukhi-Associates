@@ -10,11 +10,11 @@ export const Footer = () => {
         <div className="footer-grid">
           {/* Company Info */}
           <div className="footer-section">
-            <h3 className="footer-title">CA Meherally</h3>
+            <h3 className="footer-title">CA Mukhi and Associates</h3>
             <p className="footer-text">
               Your trusted partner for comprehensive accounting, tax, and business advisory services.
             </p>
-            <div className="social-links">
+            {/* <div className="social-links">
               <a href="#" className="social-link" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
@@ -24,7 +24,7 @@ export const Footer = () => {
               <a href="#" className="social-link" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -32,7 +32,7 @@ export const Footer = () => {
             <h4 className="footer-subtitle">Quick Links</h4>
             <ul className="footer-links">
               <li><Link to="/" className="footer-link">Home</Link></li>
-              <li><Link to="/team" className="footer-link">Our Team</Link></li>
+              <li><Link to="/aboutus" className="footer-link">About Us</Link></li>
               <li><Link to="/services" className="footer-link">Services</Link></li>
               <li><Link to="/contact" className="footer-link">Contact Us</Link></li>
             </ul>
@@ -59,7 +59,7 @@ export const Footer = () => {
               </li>
               <li className="footer-contact-item">
                 <Phone size={16} />
-                <span>{contactInfo.phone}</span>
+                <span>{contactInfo.mobile}</span>
               </li>
               <li className="footer-contact-item">
                 <Mail size={16} />
@@ -71,7 +71,7 @@ export const Footer = () => {
 
         <div className="footer-bottom">
           <p className="footer-copyright">
-            © {new Date().getFullYear()} CA Meherally. All rights reserved.
+            © {new Date().getFullYear()} CA Mukhi and Associates. All rights reserved.
           </p>
         </div>
       </div>
