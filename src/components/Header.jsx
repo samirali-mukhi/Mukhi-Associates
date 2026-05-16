@@ -22,7 +22,7 @@ export const Header = () => {
         {/* Added display: flex, align-items, and gap inline */}
         <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <img 
-            src="public/assets/images/ca_logo.png" 
+            src="/assets/images/ca_logo.png" 
             alt="CA India" 
             style={{ height: '60px', width: '60px', display: 'block', objectFit: 'contain' }} 
           />
